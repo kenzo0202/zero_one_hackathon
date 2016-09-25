@@ -6,7 +6,8 @@ body	{margin: 0;
 
 /* ボックスの左右に確保する余白 */
 .box1, .boxA, .box2-inner
-	{padding-left: 10px;
+	{
+        padding-left: 10px;
 	padding-right: 10px}
 .box5-inner{
     text-align: center
@@ -15,8 +16,12 @@ body	{margin: 0;
 
 
 /* サイト名 */
-.site h1 a	{color: #FF7E4B;
-	text-decoration: none}
+.site_title	{
+    color: #FF7E4B;
+	text-decoration: none;
+    font-weight: 800;
+    font-size: 30px;
+}
 
 .site h1	{margin: 0;
 	font-size: 30px;
@@ -331,8 +336,8 @@ body	{margin: 0;
 
 /* ボックスの上下の間隔 */
 .box1	{
-    padding-top: 8px;
-	padding-bottom: 8px;
+    padding-top: 10px;
+	padding-bottom: 10px;
     }
 
 .box3	{padding-top: 40px;
@@ -485,7 +490,7 @@ body	{margin: 0;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     color: #111;
-    width: 100px;
+    width: 130px;
     padding: 10px 0;
 }
 
@@ -522,4 +527,8 @@ body	{margin: 0;
 .checkbox{
     padding:125px 0;
     margin: 0px !important;
+}
+
+.btn-right{
+    float: right;
 }
