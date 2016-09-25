@@ -5,9 +5,13 @@ body	{margin: 0;
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
 
 /* ボックスの左右に確保する余白 */
-.box1, .boxA, .box2-inner, .box5-inner
+.box1, .boxA, .box2-inner
 	{padding-left: 10px;
 	padding-right: 10px}
+.box5-inner{
+    text-align: center
+
+}
 
 
 /* サイト名 */
@@ -269,12 +273,18 @@ body	{margin: 0;
 
 
 /* 概要 */
-.gaiyou	{margin-bottom: 20px}
+.gaiyou	{
+    margin-bottom: 20px;
+    width:85%;
+}
 
-.gaiyou a	{display: block;
+.gaiyou a	{
+    display: block;
 	border: solid 1px #dddddd;
 	color: #000000;
-	text-decoration: none}
+	text-decoration: none;
+    height:250px;
+}
 
 .gaiyou a:hover	{box-shadow: 0 0 10px #dddddd}
 
@@ -320,8 +330,10 @@ body	{margin: 0;
 
 
 /* ボックスの上下の間隔 */
-.box1	{padding-top: 8px;
-	padding-bottom: 8px}
+.box1	{
+    padding-top: 8px;
+	padding-bottom: 8px;
+    }
 
 .box3	{padding-top: 40px;
 	padding-bottom: 30px}
@@ -454,6 +466,7 @@ body	{margin: 0;
 
 
 
+
 /* ########### 1040px以上 ########### */
 @media (min-width: 1040px) {
 
@@ -463,4 +476,50 @@ body	{margin: 0;
 	margin-left: auto;
 	margin-right: auto}
 
+}
+
+.btn{
+    background: #EEE;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    color: #111;
+    width: 100px;
+    padding: 10px 0;
+}
+
+#budget,#taste,#limit{
+    border: 1px #444 solid;
+}
+#budget_selected{
+    padding:10px 0px 10px 5px;
+}
+
+.title{
+    background-color: #ccc;
+    width:100%;
+    padding:5px 0px 5px 5px;
+}
+
+.sidebar{
+    margin-top: 20px;
+}
+
+#reserve{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.choice_right{
+    width:50%
+}
+.choice_left{
+    width:50%
+}
+
+.checkbox{
+    padding:125px 0;
+    margin: 0px !important;
 }

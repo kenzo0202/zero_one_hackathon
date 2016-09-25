@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <title>サンプル</title>
 <meta name="viewport" content="width=device-width">
-
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
-
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
@@ -20,81 +20,229 @@
 	</div>
 </div>
 
-<div class="box2">
-<div class="box2-inner">
-	<nav class="menu">
-	<ul>
-	<li><a href="#">トップ</a></li>
-	<li><a href="#">雑貨</a></li>
-	<li><a href="#">ガジェット</a></li>
-	<li><a href="#">お出掛け</a></li>
-	<li><a href="#">食べ物</a></li>
-	<li><a href="#">お問い合わせ</a></li>
-	</ul>
-	</nav>
+
+<div class="container-fluid">
+  <div class="row">
+                                                <!--     検索窓　　　-->
+      <div class="col-xs-12 col-md-3">
+          <div class="sidebar">
+             <div id="budget">
+                 <div class="title">
+                    予算
+                 </div>
+                 <div id="budget_selected">
+                     <select name="min_budget">
+                        <option selected>指定なし</option>
+                        <option value="1000">¥1000円</option>
+                        <option value="2000">¥2000円</option>
+                        <option value="3000">¥3000円</option>
+                        <option value="4000">¥4000円</option>
+                    </select>
+                    〜
+                    <select name="max_budget">
+                        <option selected>指定なし</option>
+                        <option value="1000">¥1000円</option>
+                        <option value="2000">¥2000円</option>
+                        <option value="3000">¥3000円</option>
+                        <option value="4000">¥4000円</option>
+                    </select>
+                </div>
+             </div>
+             <div id="limit">
+                 <div class="title">
+                    空席確認・ネット予約
+                 </div>
+                 <p>
+                     人数:
+                     <select name="member">
+                        <option value="1">1名</option>
+                        <option value="2">2名</option>
+                        <option value="3">3名</option>
+                        <option value="4">4名</option>
+                        <option value="5">5名</option>
+                    </select>
+                 </p>
+                 <p>
+                    来店日:
+                     <input type="date" name="example1">
+                 </p>
+                 <p>
+                     時間:
+                     <select name="time">
+                        <option value="1800">18:00</option>
+                        <option value="1830">18:30</option>
+                        <option value="1900">19:00</option>
+                        <option value="1930">19:30</option>
+                        <option value="2000">20:00</option>
+                    </select>
+                </p>
+             </div>
+             <div id="taste">
+                <div class="title">
+                    こだわり
+                </div>
+                   <div class="row">
+                      <div class="col-xs-6 cat_width"> 
+                        <input class="choice_right" type="checkbox" name="taste" value="1">安い
+                        <input class="choice_left" type="checkbox" name="taste" value="2">食べ放題
+                      </div>
+                      <div class="col-xs-6 cat_width">
+                        <input class="choice_right" type="checkbox" name="taste" value="3">宴会
+                        <input class="choice_left" type="checkbox" name="taste" value="4">貸切可
+                      </div>
+                    </div>
+             </div>
+             <div id="reserve">
+                 <a class="btn" href="">絞り込む</a>
+             </div>
+              
+          </div>
+      
+      </div>
+      
+                                                <!--     検索窓　　　-->
+      <div class="col-xs-6 col-md-9">
+          <div class="row">
+              <div class="col-md-1">
+                  <div class="checkboxes">
+                       <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="blankCheckbox" value="option1" aria-label="...">
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="blankCheckbox" value="option2" aria-label="...">
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="blankCheckbox" value="option3" aria-label="...">
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="blankCheckbox" value="option4" aria-label="...">
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="blankCheckbox" value="option5" aria-label="...">
+                          </label>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-11">
+                 <div class="boxA">
+                    <article class="gaiyou">                    
+                        <a href="#">
+                            <h1 class="shop_title">お店名前</h1>
+                            <div class="container-fluid">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <img src="https://tabelog.ssl.k-img.com/resize/660x370c/restaurant/images/Rvw/52064/52064089.jpg?token=7d7fe65&api=v2" alt="">
+                                  </div>
+                                  <div class="col-md-8">
+                                      <p>---さんに---件のお店をご案内します。</p>
+                                      <p class="price">1000円~3000円</p>
+                                      <p class="more">詳細<i class="fa fa-chevron-right"></i></p>
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </article>
+
+                <!-- <div class="boxA-1"> -->
+                    <article class="gaiyou">
+                        <a href="#">
+                            <h1 class="shop_title">お店名前</h1>
+                            <div class="container-fluid">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <img src="https://tabelog.ssl.k-img.com/resize/660x370c/restaurant/images/Rvw/55219/55219035.jpg?token=f97611e&api=v2" alt="">
+                                  </div>
+                                  <div class="col-md-8">
+                                      <p>部屋を明るく彩りたいならカラフルな家具がおすすめです。大きい家具をカラフルにすると、部屋全体のバラン…</p>
+                                      <p class="price">1000円~3000円</p>
+                                     <p class="more">詳細<i class="fa fa-chevron-right"></i></p>
+                                  </div>
+                              </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="gaiyou">
+                        <a href="#">
+                          <h1 class="shop_title">お店名前</h1>
+                           <div class="container-fluid">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <img src="https://tabelog.ssl.k-img.com/resize/660x370c/restaurant/images/Rvw/42976/42976661.jpg?token=888a054&api=v2" alt="">
+                                  </div>
+                                  <div class="col-md-8">
+                                      <p>旬のジャガイモがおいしいこの季節。まとめ買いするとお得だけれども、どうしても料理がワンパターンになっ…</p>
+                                      <p class="price">1000円~3000円</p>
+                                    <p class="more">詳細<i class="fa fa-chevron-right"></i></p>
+                                  </div>
+                              </div>
+                            </div>
+
+                        </a>
+                    </article>
+
+                    <article class="gaiyou">
+                        <a href="#">
+                            <h1 class="shop_title">お店名前</h1>
+                            <div class="container-fluid">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <img src="https://tabelog.ssl.k-img.com/resize/660x370c/restaurant/images/Rvw/47637/47637072.jpg?token=f60fe54&api=v2" alt="">
+                                  </div>
+                                  <div class="col-md-8">
+                                     <p>缶詰は長期保存ができるすぐれもの。コストパフォーマンスも高いですし、備蓄しておけば困ったときに簡単に…</p>
+                                     <p class="price">1000円~3000円</p>
+                                    <p class="more">詳細<i class="fa fa-chevron-right"></i></p>
+                                  </div>
+                              </div>
+                            </div>
+
+                        </a>
+                    </article>
+
+                    <article class="gaiyou">
+                        <a href="#">
+                            <h1 class="shop_title">お店名前</h1>
+                            <div class="container-fluid">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <img src="https://tabelog.ssl.k-img.com/resize/660x370c/restaurant/images/Rvw/45146/45146544.jpg?token=822fc02&api=v2" alt="">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <p>たくさんの満開の花に囲まれて過ごしたいときにおすすめの鑑賞スポットを紹介します。季節ごとに色とりどり…</p>
+                                    <p class="price">1000円~3000円</p>
+                                    <p class="more">詳細<i class="fa fa-chevron-right"></i></p>
+                                  </div>
+                              </div>
+                            </div>
+
+                        </a>
+                    </article>
+            <!-- </div> -->
+                </div>
+            </div>
+            
+          </div>
+           
+    </div>
+
+
+
+        <div class="box5">
+            <div class="box5-inner">
+                <div class="copyright">
+                <p>Copyright &copy; Catcheee</p>
+                </div>
+            </div>
+        </div>
+  </div>
 </div>
-</div>
-
-
-<div class="boxA">
-	<article class="gaiyou pickup">
-	<a href="#">
-		<img src="img/tomato-top.jpg" alt="">
-		<h1>----さんにオススメのお店</h1>
-		<p>---さんに---件のお店をご案内します。</p>
-		<p class="more">詳細<i class="fa fa-chevron-right"></i></p>
-	</a>
-	</article>
-
-<!-- <div class="boxA-1"> -->
-	<article class="gaiyou">
-	<a href="#">
-		<img src="img/color-top.jpg" alt="">
-		<h1>部屋を彩るカラフルな家具</h1>
-		<p>部屋を明るく彩りたいならカラフルな家具がおすすめです。大きい家具をカラフルにすると、部屋全体のバラン…</p>
-		<p class="more">詳細<i class="fa fa-chevron-right"></i></p>
-	</a>
-	</article>
-
-	<article class="gaiyou">
-	<a href="#">
-		<img src="img/imo-top.jpg" alt="">
-		<h1>美味しいジャガイモ料理</h1>
-		<p>旬のジャガイモがおいしいこの季節。まとめ買いするとお得だけれども、どうしても料理がワンパターンになっ…</p>
-		<p class="more">詳細<i class="fa fa-chevron-right"></i></p>
-	</a>
-	</article>
-
-	<article class="gaiyou">
-	<a href="#">
-		<img src="img/can-top.jpg" alt="">
-		<h1>缶詰をうまく活用して節約＆効率化</h1>
-		<p>缶詰は長期保存ができるすぐれもの。コストパフォーマンスも高いですし、備蓄しておけば困ったときに簡単に…</p>
-		<p class="more">詳細<i class="fa fa-chevron-right"></i></p>
-	</a>
-	</article>
-
-	<article class="gaiyou">
-	<a href="#">
-		<img src="img/sakura-top.jpg" alt="">
-		<h1>花好きにおすすめの鑑賞スポット</h1>
-		<p>たくさんの満開の花に囲まれて過ごしたいときにおすすめの鑑賞スポットを紹介します。季節ごとに色とりどり…</p>
-		<p class="more">詳細<i class="fa fa-chevron-right"></i></p>
-	</a>
-	</article>
-<!-- </div> -->
-</div>
-
-
-
-<div class="box5">
-<div class="box5-inner">
-	<div class="copyright">
-	<p>Copyright &copy; TimeSwitch</p>
-	</div>
-</div>
-</div>
-
-
-</body>
-</html>
